@@ -45,6 +45,7 @@ function writeUserData(userId, firstname, lastname, age, gender, contactnumber, 
       permanentaddress: permanentaddress,
       currentaddress: currentaddress,
       gmail: gmail,
+      gender: gender,
       interestarea: interestarea,
       height: height,
 
