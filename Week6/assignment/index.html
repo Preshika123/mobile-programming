@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+    }
+
+    #mainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container {
+        background: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 350px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 8px;
+        background-color: #007bff;
+        color: white;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="mainContainer">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <input type="text" id="name" placeholder="Enter Name">
+
+            <input type="email" id="email" placeholder="Enter Email">
+            
+            <input type="subject" id="subject" placeholder="Enter subject">
+
+            <textarea id="message" rows="4" placeholder="Enter Message"></textarea>
+
+            <button onclick="submitData()">Submit</button>
+            <button onclick="updateData()">Update</button>
+        </div>
+        <div class="container">
+            <h2>Details</h2>
+
+            <input type="text" id="details-name" placeholder="Enter Name">
+
+            <input type="email" id="details-email" placeholder="Enter Email">
+            
+            <input type="address" id="details-address" placeholder="Enter Email">
+           
+            <input type="email" id="details-subject" placeholder="Enter subject">
+
+            <textarea id="details-message" rows="4" placeholder="Enter Message"></textarea>
+
+            <button onclick="editData()">Edit</button>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+
+
+</body>
+
+</html>
