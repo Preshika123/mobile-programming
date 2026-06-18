@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detection System</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#0B1E3A;
+            color:white;
+            padding:20px;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            margin-top:10px;
+            border-radius:5px;
+            border:none;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            margin-top:10px;
+            background:#2ECC71;
+            border:none;
+            border-radius:5px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .card{
+            background:#1B2F4A;
+            padding:15px;
+            margin-top:10px;
+            border-radius:10px;
+        }
+
+        .safe{
+            color:lime;
+        }
+
+        .danger{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Phishing Detection</h1>
+
+    <input
+        type="text"
+        id="urlInput"
+        placeholder="Paste suspicious URL here..."
+    >
+
+    <button onclick="scanURL()">Scan for Threat</button>
+
+    <h2>Result</h2>
+    <div id="result"></div>
+
+    <h2>Recent Scans</h2>
+    <div id="scanHistory"></div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>
